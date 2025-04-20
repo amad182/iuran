@@ -44,7 +44,7 @@ function prosesPembayaran() {
 }
 
 function kirimLaporan() {
-    const nomorWhatsApp = '+628xxxxxxxxxx'; // Ganti dengan nomor WhatsApp tujuan (format internasional tanpa spasi atau tanda + diawal tidak masalah)
+    const nomorWhatsApp = '+6285694900411'; // Ganti dengan nomor WhatsApp tujuan (format internasional tanpa spasi atau tanda + diawal tidak masalah)
     const jenisLaporan = document.getElementById('jenis-laporan').value;
     const tanggalKejadian = document.getElementById('tanggal-kejadian').value;
     const waktuKejadian = document.getElementById('waktu-kejadian').value;
