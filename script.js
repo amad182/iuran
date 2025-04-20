@@ -61,7 +61,7 @@ function kirimLaporan() {
 
         // Encode pesan agar aman untuk URL
         const encodedPesan = encodeURIComponent(pesan);
-        const urlWhatsApp = `https://wa.me/${nomorWhatsApp}?text=${encodedPesan}`;
+        const urlWhatsApp = `https://wa.me/${+6285694900411}?text=${encodedPesan}`;
 
         // Setel href dari link WhatsApp
         kirimWaLink.href = urlWhatsApp;
