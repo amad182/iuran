@@ -1,0 +1,135 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.form-container label {
+    font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container select,
+.form-container textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-container textarea {
+    resize: vertical;
+}
+
+.form-container button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    grid-column: 1 / 3;
+}
+
+.form-container button:hover {
+    background-color: #4cae4c;
+}
+
+.status-area {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.status-area.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+}
+
+.status-area.error {
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+}
+
+#riwayat-pembayaran-list {
+    list-style: none;
+    padding: 0;
+}
+
+#riwayat-pembayaran-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#riwayat-pembayaran-list li:last-child {
+    border-bottom: none;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+}
+/* ... aturan CSS sebelumnya ... */
+
+.button-wa {
+    display: inline-block;
+    background-color: #25D366; /* Warna hijau WhatsApp */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    grid-column: 1 / 3;
+    text-align: center;
+}
+
+.button-wa:hover {
+    background-color: #128C7E; /* Warna hijau WhatsApp lebih gelap */
+}

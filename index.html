@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Iuran & Keamanan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Aplikasi Iuran & Keamanan</h1>
+    </header>
+
+    <main>
+        <section id="pembayaran">
+            <h2>Pembayaran Iuran Sampah dan Keamanan</h2>
+            <div class="form-container">
+                <label for="nama-warga">Nama Warga:</label>
+                <input type="text" id="nama-warga" placeholder="Masukkan nama Anda">
+
+                <label for="bulan-pembayaran">Bulan Pembayaran:</label>
+                <select id="bulan-pembayaran">
+                    <option value="januari">Januari</option>
+                    <option value="februari">Februari</option>
+                    <option value="maret">Maret</option>
+                    <option value="april">April</option>
+                    <option value="mei">Mei</option>
+                    <option value="juni">Juni</option>
+                    <option value="juli">Juli</option>
+                    <option value="agustus">Agustus</option>
+                    <option value="september">September</option>
+                    <option value="oktober">Oktober</option>
+                    <option value="november">November</option>
+                    <option value="desember">Desember</option>
+                </select>
+
+                <label for="jumlah-bayar">Jumlah Pembayaran:</label>
+                <input type="number" id="jumlah-bayar" placeholder="Masukkan jumlah iuran">
+
+                <button onclick="prosesPembayaran()">Bayar</button>
+            </div>
+            <div id="status-pembayaran" class="status-area"></div>
+            <h3>Riwayat Pembayaran</h3>
+            <ul id="riwayat-pembayaran-list">
+                </ul>
+        </section>
+        <section id="keamanan">
+            <h2>Laporan Keamanan</h2>
+            <div class="form-container">
+                <label for="jenis-laporan">Jenis Laporan:</label>
+                <select id="jenis-laporan">
+                    <option value="pencurian">Pencurian</option>
+                    <option value="gangguan">Gangguan</option>
+                    <option value="tawuran">Tawuran</option>
+                    <option value="lain-lain">Lain-lain</option>
+                </select>
+
+                <label for="tanggal-kejadian">Tanggal:</label>
+                <input type="date" id="tanggal-kejadian">
+
+                <label for="waktu-kejadian">Waktu:</label>
+                <input type="time" id="waktu-kejadian">
+
+                <label for="petugas-terlibat">Petugas:</label>
+                <input type="text" id="petugas-terlibat" placeholder="Nama petugas (jika ada)">
+
+                <label for="lokasi-kejadian">Lokasi Kejadian:</label>
+                <input type="text" id="lokasi-kejadian" placeholder="Sebutkan lokasi kejadian">
+
+                <label for="deskripsi-kejadian">Deskripsi Kejadian:</label>
+                <textarea id="deskripsi-kejadian" rows="4" placeholder="Jelaskan detail kejadian"></textarea>
+
+                <a href="#" id="kirim-wa" class="button-wa">Kirim Laporan via WhatsApp</a>
+            </div>
+            <div id="status-laporan" class="status-area"></div>
+        </section>
+    <footer>
+        <p>&copy; 2025 Aplikasi Iuran & Keamanan</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
